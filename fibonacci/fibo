@@ -1,0 +1,16 @@
+print('='*20)
+print('Sequencia de fibonacci')
+print('='*20)
+sequencia = int(input('quantos termos voce quer mostra: '))
+t1 = 0 # o primeiro termo de fibonacci é 0
+t2 = 1 # o segundo termo de fibonacci é 1
+print('~'*30)
+print('{}. {}'.format(t1, t2), end='')# para mostrar os dois primeiros termos
+contador = 3 # contador começa com 3 pois ja temos o primeiro e o segundo termo
+while contador <= sequencia:
+    t3 = t1 + t2
+    print('. {}'.format(t3), end='')
+    t1 = t2 # o t1 passa a ser o proximo termo depois do t3
+    t2 = t3 # o t2 passa a ser o proximo termo da lista
+    contador += 1
+print('. fim')
